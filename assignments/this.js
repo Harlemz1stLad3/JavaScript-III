@@ -53,3 +53,20 @@ Pachant.speak();
 // Principle 4
 
 // code example for Explicit Binding
+function Music(dance) {
+    this.style = dance.style;
+    this.alias = dance.alias;
+    this.area = dance.area;
+    this.speak = function () {
+        return `WELCOME TO HARLEM ${this.style} ${this.alias} ${this.area}`;
+    };
+}
+
+const artistProfile = new Music ({
+    style: "hip hop Newyorkcity",
+    alias: "Lavish Loe !!!",
+    area: "from the streets of NYC"
+
+})
+
+console.log(artistProfile); console.log(artistProfile.speak());
